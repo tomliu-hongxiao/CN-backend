@@ -35,7 +35,7 @@ class Formula:
 
     @staticmethod
     def volume_spike(series):
-        if series.iloc[-1] > 2 * Formula.sma(series[:-1], 10):
+        if series.iloc[-1] > 1.9 * Formula.sma(series[:-1], 10):
             return True
         else:
             return False

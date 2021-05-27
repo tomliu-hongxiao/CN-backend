@@ -1,13 +1,13 @@
 import datetime
 
 from utility.formula import Formula
-from strategy.shortin import ShortIn
-from strategy.shortout import ShortOut
-from strategy.longin import LongIn
-from strategy.longout import LongOut
+from strategy.tsla.shortin import ShortIn
+from strategy.tsla.shortout import ShortOut
+from strategy.tsla.longin import LongIn
+from strategy.tsla.longout import LongOut
 
 
-class Trend:
+class TSLATrend:
     def __init__(self):
         self.short_in = ShortIn()
         self.short_out = ShortOut()
